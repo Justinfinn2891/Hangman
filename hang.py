@@ -4,19 +4,6 @@
 import random 
 import string
 import pygame
-
-pygame.init() 
-width = 800
-height = 900
-screen = pygame.display.set_mode((width,height))
-pygame.display.set_caption('Hangman')
-##Icon = pygame.image.load('\Hangman\images.png')
-#pygame.display.set_icon(Icon)  
-color = (90, 220, 255)
- 
-# Changing surface color
-screen.fill(color)
-pygame.display.flip()
  
 def hintAssort(name):
     if name.upper() == "ORANGE":
@@ -55,7 +42,7 @@ running  = True
 # PUT DOWN POSSIBLE GUESSES, HINTS, TEXTS
 while running:
     
-    '''
+ 
     print("Welcome to Hangman! :")
     print("+-----------------+")
     end = 'Y'
@@ -117,11 +104,6 @@ while running:
                 print("__", " ", end = "")
             print('\n', sep='')
             letter = input("Make another guess: ")
-          '''
-    for event in pygame.event.get():  
-        if event.type == pygame.QUIT:  
-           running = False
-    pygame.display.update() 
-pygame.quit()
-            
+     
+
                 
