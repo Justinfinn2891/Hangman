@@ -3,7 +3,6 @@
 
 import random 
 import string
-import pygame
  
 def hintAssort(name):
     if name.upper() == "ORANGE":
